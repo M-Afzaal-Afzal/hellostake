@@ -17,7 +17,7 @@ import {
 
 const Header = () => {
 
-    const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+    const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
 
     const {isOpen, onOpen, onClose} = useDisclosure()
 
@@ -53,7 +53,7 @@ const Header = () => {
 
 
                     {/* left side of nav*/}
-                    <HStack justifySelf={'start'} display={'flex'} spacing={8}>
+                    <HStack justifySelf={'start'} display={['none',null,null,null,'flex']} spacing={8}>
                         <HeaderButton>
                             Pricing
                         </HeaderButton>
@@ -76,7 +76,7 @@ const Header = () => {
 
                     {/*right side of nav*/}
                     {
-                        isLargerThan900 ? (
+                        isLargerThan768 ? (
                             <HStack spacing={8}>
                                 <HeaderButton>
                                     Carrer
