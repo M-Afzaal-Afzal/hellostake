@@ -1,5 +1,5 @@
 import {Box, Button} from "@chakra-ui/react";
-import {DarkModeSwitch} from "../src/components/Buttons/DarkModeSwitch";
+// import {DarkModeSwitch} from "../src/components/Buttons/DarkModeSwitch";
 import {useDispatch, useSelector} from "react-redux";
 import {decrement, increment,selectCounterVale} from "../src/store/counter/counterSlice";
 
@@ -26,9 +26,7 @@ const Home = () => {
 
             main page
             <Box>{value}</Box>
-            <Box>
-                <DarkModeSwitch/>
-            </Box>
+
         </Box>
     )
 }

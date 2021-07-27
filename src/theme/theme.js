@@ -1,25 +1,29 @@
-import { extendTheme } from '@chakra-ui/react'
-import { createBreakpoints } from '@chakra-ui/theme-tools'
+import {extendTheme} from '@chakra-ui/react'
+import {createBreakpoints} from '@chakra-ui/theme-tools'
 
 
 
-// todo - choose the font the past the cdn link in the document.js file
 
 const fonts = {
-    body: "system-ui, sans-serif",
-    heading: "Georgia, serif",
-    mono: "Menlo, monospace",
+    body: "Open Sans, sans-serif",
+    heading: "Open Sans, sans-serif",
+    mono: "Open Sans, sans-serif",
 }
 
 // todo - choose the brand colors
 
-const colors = {};
+const colors = {
+    'brand': {
+        400: '#141414',
+    },
+};
 
 const breakpoints = createBreakpoints({
-    sm: '40em',
-    md: '52em',
-    lg: '64em',
-    xl: '80em',
+    sm: '20em', // 320px
+    md: '30em', // 480
+    lg: '37.5em', // 600
+    xl: '48em', // 768
+    '2xl': '64em', // 1024
 })
 
 const theme = extendTheme({
