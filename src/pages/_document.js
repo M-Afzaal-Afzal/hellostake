@@ -1,10 +1,11 @@
 import Document, {Html, Head, Main, NextScript} from 'next/document'
+import { ColorModeScript } from '@chakra-ui/react'
 
 class MyDocument extends Document {
-    // static async getInitialProps(ctx) {
-    //     const initialProps = await Document.getInitialProps(ctx)
-    //     return {...initialProps}
-    // }
+    static async getInitialProps(ctx) {
+        const initialProps = await Document.getInitialProps(ctx)
+        return {...initialProps}
+    }
 
     render() {
         return (
@@ -12,12 +13,13 @@ class MyDocument extends Document {
                 <Head>
 
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={'true'}/>
                     <link
                         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
                         rel="stylesheet"/>
                 </Head>
                 <body>
+                <ColorModeScript />
                 <Main/>
                 <NextScript/>
                 </body>

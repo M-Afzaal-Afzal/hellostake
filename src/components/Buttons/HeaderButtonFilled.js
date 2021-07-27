@@ -3,7 +3,7 @@ import {Box} from "@chakra-ui/react";
 
 const HeaderButtonFilled = forwardRef (({children,...props},ref) => {
     return (
-        <Box display={'flex'}
+        <Box display={'inline-flex'}
              justifyContent={'center'}
              alignItems={'center'}
             // padding={'1rem'}

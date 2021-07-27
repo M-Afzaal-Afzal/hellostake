@@ -1,7 +1,7 @@
 import {Box, Button} from "@chakra-ui/react";
 // import {DarkModeSwitch} from "../src/components/Buttons/DarkModeSwitch";
 import {useDispatch, useSelector} from "react-redux";
-import {decrement, increment,selectCounterVale} from "../src/store/counter/counterSlice";
+import {decrement, increment,selectCounterVale} from "../store/counter/counterSlice";
 
 const Home = () => {
 
@@ -31,6 +31,6 @@ const Home = () => {
     )
 }
 
-export {getServerSideProps} from "../src/theme/Chakra";
+export {getServerSideProps} from "../theme/Chakra";
 
 export default Home;

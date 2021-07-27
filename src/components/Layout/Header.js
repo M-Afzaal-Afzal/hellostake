@@ -18,6 +18,7 @@ import {
 const Header = () => {
 
     const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
+
     const {isOpen, onOpen, onClose} = useDisclosure()
 
     return (
@@ -50,50 +51,48 @@ const Header = () => {
                         Logo
                     </Box>
 
+
+                    {/* left side of nav*/}
+                    <HStack justifySelf={'start'} display={'flex'} spacing={8}>
+                        <HeaderButton>
+                            Pricing
+                        </HeaderButton>
+
+                        <HeaderButton>
+                            Blog
+                        </HeaderButton>
+
+                        <HeaderButton>
+                            Carrer
+                        </HeaderButton>
+                        <HeaderButton>
+                            Support
+                        </HeaderButton>
+
+                    </HStack>
+
+
+                    <Spacer/>
+
+                    {/*right side of nav*/}
                     {
                         isLargerThan900 ? (
-                            <>
-                                {/* left side of nav*/}
-                                <HStack spacing={8}>
-                                    <HeaderButton>
-                                        Pricing
-                                    </HeaderButton>
+                            <HStack spacing={8}>
+                                <HeaderButton>
+                                    Carrer
+                                </HeaderButton>
+                                <HeaderButtonFilled>
+                                    Support
+                                </HeaderButtonFilled>
 
-                                    <HeaderButton>
-                                        Blog
-                                    </HeaderButton>
+                                {/*mobile nav icon*/}
+                                <Box display={'none'}>
 
-                                    <HeaderButton>
-                                        Carrer
-                                    </HeaderButton>
-                                    <HeaderButton>
-                                        Support
-                                    </HeaderButton>
+                                </Box>
 
-                                </HStack>
-
-
-                                <Spacer/>
-
-                                {/*right side of nav*/}
-                                <HStack spacing={8}>
-                                    <HeaderButton>
-                                        Carrer
-                                    </HeaderButton>
-                                    <HeaderButtonFilled>
-                                        Support
-                                    </HeaderButtonFilled>
-
-                                    {/*mobile nav icon*/}
-                                    <Box display={'none'}>
-
-                                    </Box>
-
-                                </HStack>
-                            </>
+                            </HStack>
                         ) : (
                             <>
-                                <Spacer/>
                                 <IconButton
                                     onClick={onOpen}
                                     bg={'transparent'}
@@ -157,7 +156,7 @@ const Header = () => {
                                 DOWNLOAD STAKE
                             </Box>
 
-                            <HeaderButtonFilled >
+                            <HeaderButtonFilled>
                                 APP STORE
                             </HeaderButtonFilled>
 
