@@ -20,7 +20,7 @@ const Home = () => {
     // }
 
     return (
-        <Box>
+        <Box as={'main'} display={'flex'} flex={'1 1 100%'} flexDirection={'column'}>
             <HeroSection/>
         </Box>
     )

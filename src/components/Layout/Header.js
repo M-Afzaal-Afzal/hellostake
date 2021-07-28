@@ -31,7 +31,12 @@ const Header = () => {
             height={'64px'}
             color={'white'}
         >
-            <Box bg={'brand.400'} position={'absolute'} height={'100%'} width={'100%'}/>
+            <Box
+                // bg={'brand.400'}
+                position={'absolute'}
+                height={'100%'}
+                width={'100%'}
+            />
             <Container
                 w={'100%'}
                 h={'100%'}
