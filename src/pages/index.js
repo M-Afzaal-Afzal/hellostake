@@ -4,6 +4,7 @@ import {Box} from "@chakra-ui/react";
 // import {decrement, increment,selectCounterVale} from "../store/counter/counterSlice";
 import HeroSection from "../components/HomePage/HeroSection";
 import OpportunitiesSection from "../components/HomePage/OpportunitiesSection";
+import StepsIntoSection from "../components/HomePage/StepsIntoSection";
 
 const Home = () => {
 
@@ -24,6 +25,7 @@ const Home = () => {
         <Box as={'main'}>
             <HeroSection/>
             <OpportunitiesSection/>
+            <StepsIntoSection/>
         </Box>
     )
 }
