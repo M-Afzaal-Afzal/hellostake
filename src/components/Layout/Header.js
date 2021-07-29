@@ -14,15 +14,23 @@ import {
     DrawerContent,
     DrawerCloseButton,
 } from "@chakra-ui/react"
+import {FaGooglePlay,FaApple} from 'react-icons/fa';
+import {useSelector} from "react-redux";
+import {selectInViewVale} from "../../store/counter/HeroSectionInviewSlice";
 
 const Header = () => {
 
     const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
 
-    const {isOpen, onOpen, onClose} = useDisclosure()
+    const {isOpen, onOpen, onClose} = useDisclosure();
+
+    const inView = useSelector(selectInViewVale);
+
+    console.log('inview from header is ', inView)
 
     return (
         <Box
+
             display={'flex'}
             pos={'sticky'}
             top={0}
@@ -32,7 +40,8 @@ const Header = () => {
             color={'white'}
         >
             <Box
-                // bg={'brand.400'}
+                bg={!inView ? 'brand.400' : 'transparent'}
+                transition={'all .3s'}
                 position={'absolute'}
                 height={'100%'}
                 width={'100%'}
@@ -64,14 +73,14 @@ const Header = () => {
                         </HeaderButton>
 
                         <HeaderButton>
-                            Blog
+                            Free Education
                         </HeaderButton>
 
                         <HeaderButton>
-                            Carrer
+                            Podcast
                         </HeaderButton>
                         <HeaderButton>
-                            Support
+                            Support Next side
                         </HeaderButton>
 
                     </HStack>
@@ -83,11 +92,11 @@ const Header = () => {
                     {
                         isLargerThan768 ? (
                             <HStack spacing={8}>
-                                <HeaderButton>
-                                    Carrer
-                                </HeaderButton>
+                                {/*<HeaderButton>*/}
+                                {/*   */}
+                                {/*</HeaderButton>*/}
                                 <HeaderButtonFilled>
-                                    Support
+                                    Sign up
                                 </HeaderButtonFilled>
 
                                 {/*mobile nav icon*/}
@@ -138,15 +147,15 @@ const Header = () => {
                             </HeaderButton>
 
                             <HeaderButton fontSize={'14px'}>
-                                Blog
+                                Free Education
                             </HeaderButton>
 
                             <HeaderButton fontSize={'14px'}>
-                                Carrer
+                                Podcast
                             </HeaderButton>
 
                             <HeaderButton fontSize={'14px'}>
-                                Support
+                               Support Next Side
                             </HeaderButton>
 
                             <Box pt={12}>
@@ -161,12 +170,12 @@ const Header = () => {
                                 DOWNLOAD STAKE
                             </Box>
 
-                            <HeaderButtonFilled>
-                                APP STORE
+                            <HeaderButtonFilled w={'12rem'}>
+                             <FaApple/> &nbsp;   APP STORE
                             </HeaderButtonFilled>
 
-                            <HeaderButtonFilled>
-                                GOOGLE PLAY
+                            <HeaderButtonFilled w={'12rem'}>
+                             <FaGooglePlay/> &nbsp; GOOGLE PLAY
                             </HeaderButtonFilled>
 
                         </VStack>

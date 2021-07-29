@@ -1,10 +1,33 @@
 import React from 'react';
-import {Box, Container, Heading} from "@chakra-ui/react";
+import {Box, Container, Heading, Text} from "@chakra-ui/react";
 import HeaderButtonFilled from "./Buttons/HeaderButtonFilled";
+import {FaGooglePlay, FaApple} from 'react-icons/fa';
+import Rate from 'rc-rate';
+import {useInView} from "react-intersection-observer";
+import {toggleInView} from "../store/counter/HeroSectionInviewSlice";
+import {useDispatch} from "react-redux";
+
 
 const HeroSection = () => {
+
+    const dispatch = useDispatch();
+
+    const { ref, inView, entry } = useInView({
+        /* Optional options */
+        threshold: 1,
+    });
+
+    if (inView) {
+        console.log('in view')
+        dispatch(toggleInView({inView: true}))
+    } else {
+        console.log('not in view')
+        dispatch(toggleInView({inView: false}))
+    }
+
+
     return (
-        <Box as={'section'} h={'calc(100vh - 64px)'}>
+        <Box ref={ref} as={'section'} h={'calc(100vh - 64px)'}>
 
             {/*Video section*/}
             <Box h={'100vh'}
@@ -18,7 +41,7 @@ const HeroSection = () => {
                  left={0}
             >
 
-                <Box height={'100vh'} zIndex={'-5'} w={'100%'} pos={'relative'} opacity={1} bg={'brand.400'}>
+                <Box h={'calc(100vh)'} zIndex={'-5'} w={'100%'} pos={'relative'} opacity={1} bg={'brand.400'}>
                     <Box as={'video'}
                          autoPlay={true}
                          objectFit={'cover'}
@@ -50,7 +73,7 @@ const HeroSection = () => {
                      gridTemplateColumns={['repeat(8,1fr)', null, null, null, null, 'repeat(12,1fr)']}
                      zIndex={1}
                 >
-                    <Box gridColumn={['1/span 7', null, null, '2/span 4']} color={'#fff'}>
+                    <Box gridColumn={['1/span 8', null, null, '2/span 4']} color={'#fff'}>
                         <Heading as={'h2'}
                                  fontSize={'clamp(38px, 6vw, 60px)'}
                                  fontWeight={'900'}
@@ -59,11 +82,10 @@ const HeroSection = () => {
                                  textTransform={'uppercase'}
                                  fontStyle={'italic'}
                                  whiteSpace={'break-spaces'}
+                                 textAlign={['center',null,null,'left']}
                         >
-                            STILL PAYING
-                            TO TRADE
-                            THE US?
-                            WE CALL BULL.
+                            Putting Equity in the Hands
+                            of the People
                         </Heading>
                     </Box>
 
@@ -72,41 +94,58 @@ const HeroSection = () => {
                          letterSpacing={'1px'}
                          lineHeight={'1rem'}
                          fontStyle={'italic'}
-                         gridColumn={['1/span 6', null, null, '2/span 4']}
+                         gridColumn={['1/span 8', null, null, '2/span 4']}
+                         textAlign={['center',null,null,'left']}
                     >
                         STAKE LETS YOU TRADE THE US MARKET WITH $0 BROKERAGE FEES.
                     </Box>
 
                     <Box
-                        gridColumn={['1/span 4', null, null, '2/span 3']}
+                        gridColumn={['1/span 8', null, null, '2/span 3']}
                     >
+                        <Box display={'flex'} justifySelf={'center'} alignItems={'center'} flexDirection={'column'}>
+                            <HeaderButtonFilled w={'12rem'}>
+                                <FaApple/> &nbsp;   APP STORE
+                            </HeaderButtonFilled>
+                            <Box my={2} display={'flex'} alignItems={'center'}>
+                                <Text pr={3} color={'#fff'}>4.7</Text>
+                            <Rate disabled allowHalf={true} value={4.7}/>
+                            </Box>
 
-                        <HeaderButtonFilled width={'100%'} py={2} cursor={'pointer'} _hover={{cursor: 'pointer'}}>
-                            SIGN UP
-                        </HeaderButtonFilled>
+                            <HeaderButtonFilled w={'12rem'} mt={2}>
+                                <FaGooglePlay/> &nbsp; GOOGLE PLAY
+                            </HeaderButtonFilled>
+
+                            <Box my={2} display={'flex'} alignItems={'center'}>
+                                <Text pr={3} color={'#fff'}>4.7</Text>
+                                <Rate disabled allowHalf={true} value={4.7}/>
+                            </Box>
+                        </Box>
+
 
                         <Box
                             color={'#ACAFB2'}
                             textTransform={'uppercase'}
                             fontWeight={'700'}
                             letterSpacing={'1px'}
-                            whiteSpace={'nowrap'}
+                            // whiteSpace={'nowrap'}
                             fontStyle={'normal'}
                             pt={'24px'}
                             fontSize={'12px'}
+                            textAlign={['center',null,null,'left']}
                         >
-                            WHEN YOU INVEST, YOUR CAPITAL IS AT RISK.
+                            Making it simple for both beginners and experienced investors to build and grow wealth.
                         </Box>
 
                     </Box>
 
-                    <Box gridColumn={['1/span 1', null, null, '2/span 1']}>
+                    <Box display={'flex'} alignItems={'flex-end'} gridColumn={['1/span 1', null, null, '2/span 1']}>
                         <img src="https://hellostake.com/uk/_next/image?url=%2Fimages%2Farrow-down.svg&w=48&q=75"
                              alt="arrow"
                         />
                     </Box>
 
-                    <Box gridColumn={['4/span 4', null, null, '7/span 4']} gridRow={['4', null, null, '1/span 5']}>
+                    <Box gridColumn={['3/span 4', null, null, '7/span 4']} gridRow={['4', null, null, '1/span 5']}>
 
                         <Box height={['40vh', null, null, '50vh']} marginTop={[0, null, null, '-20px']}>
 

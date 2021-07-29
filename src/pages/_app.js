@@ -3,6 +3,7 @@ import Layout from '../components/Layout/Layout';
 import 'focus-visible/dist/focus-visible'
 import {Provider} from 'react-redux'
 import store from "../store/store";
+import 'rc-rate/assets/index.css';
 
 function MyApp({Component, pageProps}) {
 
