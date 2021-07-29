@@ -2,7 +2,8 @@ import {Box} from "@chakra-ui/react";
 // import {DarkModeSwitch} from "../src/components/Buttons/DarkModeSwitch";
 // import {useDispatch, useSelector} from "react-redux";
 // import {decrement, increment,selectCounterVale} from "../store/counter/counterSlice";
-import HeroSection from "../components/HeroSection";
+import HeroSection from "../components/HomePage/HeroSection";
+import OpportunitiesSection from "../components/HomePage/OpportunitiesSection";
 
 const Home = () => {
 
@@ -20,8 +21,9 @@ const Home = () => {
     // }
 
     return (
-        <Box as={'main'} display={'flex'} flex={'1 1 100%'} flexDirection={'column'}>
+        <Box as={'main'}>
             <HeroSection/>
+            <OpportunitiesSection/>
         </Box>
     )
 }

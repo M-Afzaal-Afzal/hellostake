@@ -1,10 +1,10 @@
 import React from 'react';
 import {Box, Container, Heading, Text} from "@chakra-ui/react";
-import HeaderButtonFilled from "./Buttons/HeaderButtonFilled";
+import HeaderButtonFilled from "../Buttons/HeaderButtonFilled";
 import {FaGooglePlay, FaApple} from 'react-icons/fa';
 import Rate from 'rc-rate';
 import {useInView} from "react-intersection-observer";
-import {toggleInView} from "../store/counter/HeroSectionInviewSlice";
+import {toggleInView} from "../../store/counter/HeroSectionInviewSlice";
 import {useDispatch} from "react-redux";
 
 
@@ -68,8 +68,9 @@ const HeroSection = () => {
 
             {/*   text with image section*/}
             <Container maxW={'container.xl'} zIndex={1} pt={8}>
-                <Box display={'grid'} gridGap={['16px', null, null, null, null, '24px']}
-                     gridTemplateRows={['auto auto auto 1fr 1fr', null, null, null, null, 'auto']}
+                <Box display={'grid'}
+                     gridGap={['16px', null, null, null, null, '24px']}
+                     gridTemplateRows={'auto'}
                      gridTemplateColumns={['repeat(8,1fr)', null, null, null, null, 'repeat(12,1fr)']}
                      zIndex={1}
                 >
