@@ -5,6 +5,8 @@ import {Box} from "@chakra-ui/react";
 import HeroSection from "../components/HomePage/HeroSection";
 import OpportunitiesSection from "../components/HomePage/OpportunitiesSection";
 import StepsIntoSection from "../components/HomePage/StepsIntoSection";
+import React from "react";
+import TextWithVideoSection from "../components/HomePage/TextWithVideoSection";
 
 const Home = () => {
 
@@ -26,6 +28,8 @@ const Home = () => {
             <HeroSection/>
             <OpportunitiesSection/>
             <StepsIntoSection/>
+            <TextWithVideoSection/>
+
         </Box>
     )
 }
