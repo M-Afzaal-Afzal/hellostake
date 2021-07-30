@@ -10,6 +10,7 @@ import TextWithVideoSection from "../components/HomePage/TextWithVideoSection";
 import ImageGallerySection from "../components/HomePage/ImageGallerySection";
 import TestimonialsSection from "../components/HomePage/testimonialsSection";
 import CtaSection from "../components/HomePage/CTASection";
+import StockSection from "../components/HomePage/StockSection";
 
 const Home = () => {
 
@@ -35,6 +36,7 @@ const Home = () => {
             {/*<ImageGallerySection/>*/}
             <TestimonialsSection/>
             <CtaSection/>
+            <StockSection/>
         </Box>
     )
 }

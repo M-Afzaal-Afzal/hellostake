@@ -41,7 +41,10 @@ const HeroSection = () => {
                  left={0}
             >
 
-                <Box h={'calc(100vh)'} zIndex={'-5'} w={'100%'} pos={'relative'} opacity={1} bg={'brand.400'}>
+                <Box h={'calc(100vh)'}
+                     zIndex={'-5'} w={'100%'}
+                     pos={'relative'} opacity={1} bg={'brand.400'}
+                >
                     <Box as={'video'}
                          autoPlay={true}
                          objectFit={'cover'}
@@ -68,7 +71,8 @@ const HeroSection = () => {
 
             {/*   text with image section*/}
             <Container maxW={'container.xl'} zIndex={1} pt={8}>
-                <Box display={'grid'}
+                <Box
+                    display={'grid'}
                      gridGap={['16px', null, null, null, null, '24px']}
                      gridTemplateRows={'auto'}
                      gridTemplateColumns={['repeat(8,1fr)', null, null, null, null, 'repeat(12,1fr)']}
