@@ -102,9 +102,10 @@ const HeroSection = () => {
                     </Box>
 
                     <Box
+                        display={'flex'} flexDirection={'column'} alignItems={'flex-start'}
                         gridColumn={['1/span 8', null, null, '2/span 3']}
                     >
-                        <Box display={'flex'} justifySelf={'center'} alignItems={'center'} flexDirection={'column'}>
+                        <Box display={'flex'} justifySelf={'flex-start'} alignItems={'center'} flexDirection={'column'}>
                             <HeaderButtonFilled w={'12rem'}>
                                 <FaApple/> &nbsp;   APP STORE
                             </HeaderButtonFilled>

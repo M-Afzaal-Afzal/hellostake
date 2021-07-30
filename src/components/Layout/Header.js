@@ -80,7 +80,7 @@ const Header = () => {
                             Podcast
                         </HeaderButton>
                         <HeaderButton>
-                            Support Next side
+                            Support
                         </HeaderButton>
 
                     </HStack>
@@ -155,7 +155,7 @@ const Header = () => {
                             </HeaderButton>
 
                             <HeaderButton fontSize={'14px'}>
-                               Support Next Side
+                               Support
                             </HeaderButton>
 
                             <Box pt={12}>
