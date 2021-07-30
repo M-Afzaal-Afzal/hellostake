@@ -9,6 +9,7 @@ import React from "react";
 import TextWithVideoSection from "../components/HomePage/TextWithVideoSection";
 import ImageGallerySection from "../components/HomePage/ImageGallerySection";
 import TestimonialsSection from "../components/HomePage/testimonialsSection";
+import CtaSection from "../components/HomePage/CTASection";
 
 const Home = () => {
 
@@ -33,6 +34,7 @@ const Home = () => {
             <TextWithVideoSection/>
             {/*<ImageGallerySection/>*/}
             <TestimonialsSection/>
+            <CtaSection/>
         </Box>
     )
 }
