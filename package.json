@@ -21,7 +21,8 @@
     "react-icons": "^4.2.0",
     "react-intersection-observer": "^8.32.0",
     "react-player": "^2.9.0",
-    "react-redux": "^7.2.3"
+    "react-redux": "^7.2.3",
+    "swiper": "^6.8.0"
   },
   "devDependencies": {
     "@chakra-ui/theme-tools": "^1.1.8"

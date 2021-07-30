@@ -1,9 +1,6 @@
 import {extendTheme} from '@chakra-ui/react'
 import {createBreakpoints} from '@chakra-ui/theme-tools'
 
-
-
-
 const fonts = {
     body: "Open Sans, sans-serif",
     heading: "Open Sans, sans-serif",

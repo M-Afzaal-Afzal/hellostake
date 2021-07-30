@@ -20,7 +20,7 @@ const TextWithVideoSection = () => {
         'Limit and stop orders, also commission free.',
         'Deep dive with full company financials, analyst ratings and price targets.',
         'Trade on unsettled funds with instant buying power.'
-    ]
+    ];
 
     return (
         <Box paddingTop={'5rem'} bg={'brand.400'}>

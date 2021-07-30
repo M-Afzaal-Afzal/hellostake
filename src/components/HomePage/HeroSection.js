@@ -188,7 +188,7 @@ const HeroSection = () => {
                                             objectFit: 'contain',
                                         }}
                                         src="https://hellostake.com/uk/_next/image?url=%2Fimages%2Fen%2Fhero-phone.webp&w=828&q=75"
-                                        alt=""
+                                        alt="Phone"
                                     />
                                 </Box>
 

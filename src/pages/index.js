@@ -7,6 +7,8 @@ import OpportunitiesSection from "../components/HomePage/OpportunitiesSection";
 import StepsIntoSection from "../components/HomePage/StepsIntoSection";
 import React from "react";
 import TextWithVideoSection from "../components/HomePage/TextWithVideoSection";
+import ImageGallerySection from "../components/HomePage/ImageGallerySection";
+import TestimonialsSection from "../components/HomePage/testimonialsSection";
 
 const Home = () => {
 
@@ -29,7 +31,8 @@ const Home = () => {
             <OpportunitiesSection/>
             <StepsIntoSection/>
             <TextWithVideoSection/>
-
+            {/*<ImageGallerySection/>*/}
+            <TestimonialsSection/>
         </Box>
     )
 }
