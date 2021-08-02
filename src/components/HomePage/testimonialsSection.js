@@ -25,42 +25,16 @@ const TestimonialsSection = () => {
                  className="mySwiper"
             >
 
+
+
                 <SwiperSlide style={{maxWidth: '35rem'}}>
 
-                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#C1CFDA'} pb={'2rem'}>
+                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#ffffff'} pb={'2rem'}>
 
                         <Box display={'flex'} alignItems={'center'}
                              justifyContent={'center'} py={'3rem'}
                              flexDirection={'column'}
-                        >
-                            <Avatar name={'Test'} src={'https://bit.ly/dan-abramov'}
-                                    size={'lg'}
-                            />
-                            <Text mt={2} fontWeight={'bold'}>
-                                M Afzaal Afzal
-                            </Text>
-                        </Box>
-
-                        <Box mt={'-2rem'}>
-                            <Text pos={'relative'} textAlign={'center'} px={['1rem','1.5rem','2rem',null,'3rem']} fontWeight={'normal'}>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet animi aspernatur, earum esse, ipsam labore molestiae obcaecati, praesentium quaerat quasi sequi vitae. Architecto beatae libero quidem rem sapiente vel!
-                                <Box top={0} left={'2rem'} pos={'absolute'}>
-                                    <FaQuoteLeft/>
-                                </Box>
-                            </Text>
-                        </Box>
-
-                    </Box>
-
-                </SwiperSlide>
-
-                <SwiperSlide style={{maxWidth: '35rem'}}>
-
-                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#C1CFDA'} pb={'2rem'}>
-
-                        <Box display={'flex'} alignItems={'center'}
-                             justifyContent={'center'} py={'3rem'}
-                             flexDirection={'column'}
+                             color={'gray.500'}
                         >
                             <Avatar name={'Test'} src={'https://bit.ly/dan-abramov'}
                                     size={'lg'}
@@ -85,11 +59,12 @@ const TestimonialsSection = () => {
 
                 <SwiperSlide style={{maxWidth: '35rem'}}>
 
-                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#C1CFDA'} pb={'2rem'}>
+                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#ffffff'} pb={'2rem'}>
 
                         <Box display={'flex'} alignItems={'center'}
                              justifyContent={'center'} py={'3rem'}
                              flexDirection={'column'}
+                             color={'gray.500'}
                         >
                             <Avatar name={'Test'} src={'https://bit.ly/dan-abramov'}
                                     size={'lg'}
@@ -114,11 +89,12 @@ const TestimonialsSection = () => {
 
                 <SwiperSlide style={{maxWidth: '35rem'}}>
 
-                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#C1CFDA'} pb={'2rem'}>
+                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#ffffff'} pb={'2rem'}>
 
                         <Box display={'flex'} alignItems={'center'}
                              justifyContent={'center'} py={'3rem'}
                              flexDirection={'column'}
+                             color={'gray.500'}
                         >
                             <Avatar name={'Test'} src={'https://bit.ly/dan-abramov'}
                                     size={'lg'}
@@ -143,11 +119,12 @@ const TestimonialsSection = () => {
 
                 <SwiperSlide style={{maxWidth: '35rem'}}>
 
-                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#C1CFDA'} pb={'2rem'}>
+                    <Box borderRadius={'xl'} maxW={'35rem'} bg={'#ffffff'} pb={'2rem'}>
 
                         <Box display={'flex'} alignItems={'center'}
                              justifyContent={'center'} py={'3rem'}
                              flexDirection={'column'}
+                             color={'gray.500'}
                         >
                             <Avatar name={'Test'} src={'https://bit.ly/dan-abramov'}
                                     size={'lg'}
@@ -169,6 +146,8 @@ const TestimonialsSection = () => {
                     </Box>
 
                 </SwiperSlide>
+
+
 
             </Swiper>
         </Box>

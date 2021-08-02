@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Box, Container, HStack, IconButton, Spacer, useDisclosure, VStack} from "@chakra-ui/react"
+import {Box, Container, HStack, IconButton, Image, Spacer, useDisclosure, VStack} from "@chakra-ui/react"
 import HeaderButton from "../Buttons/HeaderButton";
 import HeaderButtonFilled from "../Buttons/HeaderButtonFilled";
 import {FaBars} from 'react-icons/fa'
@@ -20,7 +20,7 @@ import {selectInViewVale} from "../../store/counter/HeroSectionInviewSlice";
 
 const Header = () => {
 
-    const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
+    const [isLargerThan900] = useMediaQuery("(min-width: 900px)");
 
     const {isOpen, onOpen, onClose} = useDisclosure();
 
@@ -30,7 +30,6 @@ const Header = () => {
 
     return (
         <Box
-
             display={'flex'}
             pos={'sticky'}
             top={0}
@@ -59,44 +58,50 @@ const Header = () => {
                     display={'flex'}
                     flex={'1 1 100%'}
                     alignItems={'center'}
+                    justifyContent={'space-between'}
                 >
 
                     <Box mr={8} fontSize={'1.5rem'} gridColumn={'1/auto'}>
-                        Logo
+                       <Image width={'10rem'} src={'/Prospuh_Logo_White.png'} alt={'Logo'}/>
                     </Box>
 
 
                     {/* left side of nav*/}
-                    <HStack justifySelf={'start'} display={['none',null,null,null,'flex']} spacing={8}>
-                        <HeaderButton>
-                            Pricing
-                        </HeaderButton>
+                    {
+                        isLargerThan900 ? (
+                            <HStack justifySelf={'start'} display={['none',null,null,null,'flex']} spacing={8}>
+                                <HeaderButton>
+                                    Pricing
+                                </HeaderButton>
 
-                        <HeaderButton>
-                            Free Education
-                        </HeaderButton>
+                                <HeaderButton>
+                                    Free Education
+                                </HeaderButton>
 
-                        <HeaderButton>
-                            Podcast
-                        </HeaderButton>
-                        <HeaderButton>
-                            Support
-                        </HeaderButton>
+                                <HeaderButton>
+                                    Podcast
+                                </HeaderButton>
+                                <HeaderButton>
+                                    Support
+                                </HeaderButton>
 
-                    </HStack>
+                            </HStack>
+
+                        ) : null
+                    }
 
 
-                    <Spacer/>
+                    {/*<Spacer/>*/}
 
                     {/*right side of nav*/}
                     {
-                        isLargerThan768 ? (
+                        isLargerThan900 ? (
                             <HStack spacing={8}>
                                 {/*<HeaderButton>*/}
                                 {/*   */}
                                 {/*</HeaderButton>*/}
                                 <HeaderButtonFilled>
-                                    Sign up
+                                    Download Now
                                 </HeaderButtonFilled>
 
                                 {/*mobile nav icon*/}
@@ -167,7 +172,7 @@ const Header = () => {
                             <Box pt={1}/>
 
                             <Box fontSize={'14'} fontWeight={'300'}>
-                                DOWNLOAD STAKE
+                               Download Prospuh
                             </Box>
 
                             <HeaderButtonFilled w={'12rem'}>
