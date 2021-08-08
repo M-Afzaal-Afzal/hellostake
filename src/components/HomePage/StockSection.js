@@ -7,7 +7,8 @@ const StockSection = () => {
         <Box bg={'brand.400'}>
             <Container
                 maxW={'container.xl'}
-                py={'7rem'}
+                pb={'7rem'}
+                pt={['0',null,null,null,'7rem']}
             >
 
                 <Box
@@ -15,11 +16,40 @@ const StockSection = () => {
                     gridTemplateColumns=
                         {['repeat(8,1fr)', null, null, null, null, 'repeat(12,1fr)']}
                     pos={'relative'}
+                    overflow={'hidden'}
+                    height={['20rem',null,null,null,'auto']}
                 >
 
-                    <Box height={'35rem'} bgGradient={'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)'}
-                         gridColumn={['1/-1', null, null, null, '2/12']}>
+                    {/*<Box  bgGradient={'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)'}*/}
+                    {/*     gridColumn={['1/-1', null, null, null, '2/12']}>*/}
 
+                    {/*</Box>*/}
+
+                    <Box as={'video'} autoPlay={true}
+                         display={['none',null,null,null,'block']}
+                         h={['40rem',null,null,'35rem']}
+                         gridColumn={['1/-1', null, null, null,null, '2/12']}
+                           style={{
+                               // position: 'absolute',
+                               // top: '50%',
+                               // left: '50%',
+                               // transform: 'translate(-50%,-50%)',
+                               // width: '85%',
+                               // height:'35rem',
+                               width: 'auto',
+                               zIndex: '' ,
+                           }}
+                           muted
+                           playsInline
+                           loop
+                           disableRemotePlayback
+                           preload="none"
+                           height="437"
+                           width="217"
+                           className="css-1vfhcql"
+                    >
+                        <source src={'/animation_black_background.mp4'} type="video/mp4"/>
+                        <source src={'/animation_black_background.mp4'} type="video/mp4"/>
                     </Box>
 
 
