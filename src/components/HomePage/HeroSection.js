@@ -58,10 +58,10 @@ const HeroSection = () => {
                          preload="metadata"
                     >
                         <source
-                            src="/heroBg.mp4"
+                            src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-secured-attachments/message/attachments/9ca7566c8f51368b44032ec2f040f067-1629216961437/DJI_0002%20%282%29_1?__cld_token__=exp=1629246196~hmac=5efbdcc932effe3ec7db349fdd507d0c9e7fa36dd55e965265486192bb0e6b93"
                             type="video/webm"
                         />
-                        <source src="/heroBg.mp4"
+                        <source src="https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-secured-attachments/message/attachments/9ca7566c8f51368b44032ec2f040f067-1629216961437/DJI_0002%20%282%29_1?__cld_token__=exp=1629246196~hmac=5efbdcc932effe3ec7db349fdd507d0c9e7fa36dd55e965265486192bb0e6b93"
                                 type="video/mp4"
                         />
                     </Box>
