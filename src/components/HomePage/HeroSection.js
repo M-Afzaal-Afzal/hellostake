@@ -58,13 +58,21 @@ const HeroSection = () => {
                          preload="metadata"
                     >
                         <source
-                            src="https://hellostake.com/uk/videos/hero-vid.webm"
+                            src="/heroBg.mp4"
                             type="video/webm"
                         />
-                        <source src="https://hellostake.com/uk/videos/hero-vid.mp4"
+                        <source src="heroBg.mp4"
                                 type="video/mp4"
                         />
                     </Box>
+
+                    {/* Video overlay*/}
+                    <Box pos={'absolute'}
+                         w={'100%'}
+                         blur={true}
+                         height={'100%'}
+                         bg={'rgba(0,0,0,0.5)'}
+                    />
                 </Box>
 
             </Box>
