@@ -61,7 +61,7 @@ const HeroSection = () => {
                             src="/heroBg.mp4"
                             type="video/webm"
                         />
-                        <source src="heroBg.mp4"
+                        <source src="/heroBg.mp4"
                                 type="video/mp4"
                         />
                     </Box>
