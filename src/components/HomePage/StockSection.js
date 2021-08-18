@@ -48,8 +48,8 @@ const StockSection = () => {
                            width="217"
                            className="css-1vfhcql"
                     >
-                        <source src={'https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-secured-attachments/message/attachments/49ad08e4726a9f7878b6d8032d5b0691-1628354262786/custoomize%20animation_black%20background?__cld_token__=exp=1629247490~hmac=f329935f9ae202e92e870c91ded1089a8df011a51466e32a5bbedd3a51ce7187'} type="video/mp4"/>
-                        <source src={'https://fiverr-res.cloudinary.com/video/upload/t_fiverr_hd/v1/video-secured-attachments/message/attachments/49ad08e4726a9f7878b6d8032d5b0691-1628354262786/custoomize%20animation_black%20background?__cld_token__=exp=1629247490~hmac=f329935f9ae202e92e870c91ded1089a8df011a51466e32a5bbedd3a51ce7187'} type="video/mp4"/>
+                        <source src={'/animation_black_background.mp4'} type="video/mp4"/>
+                        <source src={'/animation_black_background.mp4'} type="video/mp4"/>
                     </Box>
 
 
