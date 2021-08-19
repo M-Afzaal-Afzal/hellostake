@@ -58,6 +58,7 @@ const StockSection = () => {
                          mx={'auto'}
                          top={'50%'}
                          left={'50%'}
+                         h={['100%',null,null,null,'auto']}
                          transform={'translate(-50%, -50%)'}
                     >
 
@@ -106,8 +107,6 @@ const StockSection = () => {
                                         </HeaderButtonFilled>
 
                                     </Box>
-
-
 
                                 </Box>
 

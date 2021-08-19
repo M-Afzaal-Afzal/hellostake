@@ -35,7 +35,7 @@ const Home = () => {
             <TextWithVideoSection/>
             {/*<ImageGallerySection/>*/}
             <TestimonialsSection/>
-            <CtaSection/>
+            {/*<CtaSection/>*/}
             <StockSection/>
         </Box>
     )
