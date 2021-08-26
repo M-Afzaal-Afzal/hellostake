@@ -102,16 +102,16 @@ const HeroSection = () => {
                         </Heading>
                     </Box>
 
-                    <Box color={'white'}
-                         fontWeight={'600'}
-                         letterSpacing={'1px'}
-                         lineHeight={'1rem'}
-                         fontStyle={'italic'}
-                         gridColumn={['1/span 8', null, null, '2/span 4']}
-                         textAlign={['center',null,null,'left']}
-                    >
-                        STAKE LETS YOU TRADE THE US MARKET WITH $0 BROKERAGE FEES.
-                    </Box>
+                    {/*<Box color={'white'}*/}
+                    {/*     fontWeight={'600'}*/}
+                    {/*     letterSpacing={'1px'}*/}
+                    {/*     lineHeight={'1rem'}*/}
+                    {/*     fontStyle={'italic'}*/}
+                    {/*     gridColumn={['1/span 8', null, null, '2/span 4']}*/}
+                    {/*     textAlign={['center',null,null,'left']}*/}
+                    {/*>*/}
+                    {/*    STAKE LETS YOU TRADE THE US MARKET WITH $0 BROKERAGE FEES.*/}
+                    {/*</Box>*/}
 
                     <Box
                         display={'flex'} flexDirection={'column'} alignItems={'flex-start'}
