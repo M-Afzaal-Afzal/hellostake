@@ -23,7 +23,7 @@ const TextWithVideoSection = () => {
     ];
 
     return (
-        <Box paddingTop={'5rem'} bg={'brand.400'}>
+        <Box paddingTop={'5rem'} bg={'rgb(1 0 1)'}>
             <TextWithVideo
                 heading={<Box>FORGET <br/> PAPERWORK</Box>}
                 videoUrl={''}
@@ -35,29 +35,29 @@ const TextWithVideoSection = () => {
                            loop
                            disableRemotePlayback
                            preload="none"
-                           height="437"
-                           width="217"
+                           height="auto"
+                           width="100%"
                            className="css-1vfhcql"
                     >
-                        <source src={'https://hellostake.com/uk/videos/home-slide-1.webm'} type="video/webm"/>
-                        <source src={'https://hellostake.com/uk/videos/home-slide-1.webm'} type="video/mp4"/>
+                        <source src={'https://res.cloudinary.com/dskmoyzft/video/upload/v1631625016/3_Screens_Animated_1_b3is3t.mp4'} type="video/webm"/>
+                        <source src={'https://res.cloudinary.com/dskmoyzft/video/upload/v1631625016/3_Screens_Animated_1_b3is3t.mp4'} type="video/mp4"/>
                     </video>
                 }
             />
 
             <TextWithVideo
                 heading={'SEAMLESS'}
-                videoUrl={'https://hellostake.com/uk/videos/home-slide-2.webm'}
+                videoUrl={'https://res.cloudinary.com/dskmoyzft/video/upload/v1631625016/3_Screens_Animated_3_uxkfm6.mp4'}
                 video={
                     <video muted
                            autoPlay={true}
                            playsInline
                            loop
                            disableRemotePlayback
-                           preload="none" height="273"
-                           width="474" className="css-1vfhcql">
-                        <source src="https://hellostake.com/uk/videos/home-slide-2.webm" type="video/webm"/>
-                        <source src="https://hellostake.com/uk/videos/home-slide-2.webm" type="video/mp4"/>
+                           preload="none" height="auto"
+                           width="100%" className="css-1vfhcql">
+                        <source src="https://res.cloudinary.com/dskmoyzft/video/upload/v1631625016/3_Screens_Animated_3_uxkfm6.mp4" type="video/webm"/>
+                        <source src="https://res.cloudinary.com/dskmoyzft/video/upload/v1631625016/3_Screens_Animated_3_uxkfm6.mp4" type="video/mp4"/>
                     </video>
                 }
                 rightText={true}
@@ -70,11 +70,11 @@ const TextWithVideoSection = () => {
                 options={superChargeYourInvestingOptions}
                 video={
                     <video muted playsInline loop disableRemotePlayback preload={'none'} autoPlay={true}
-                           height="437"
-                           width="217" className="css-1vfhcql"
+                           height="auto"
+                           width="100%" className="css-1vfhcql"
                     >
-                        <source src="https://hellostake.com/uk/videos/home-slide-3.webm" type="video/webm"/>
-                        <source src="https://hellostake.com/uk/videos/home-slide-3.mp4" type="video/mp4"/>
+                        <source src="https://res.cloudinary.com/dskmoyzft/video/upload/v1631625014/3_Screens_Animated_qy6rqp.mp4" type="video/webm"/>
+                        <source src="https://res.cloudinary.com/dskmoyzft/video/upload/v1631625014/3_Screens_Animated_qy6rqp.mp4" type="video/mp4"/>
                     </video>
                 }
             />

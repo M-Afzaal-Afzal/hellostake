@@ -58,10 +58,10 @@ const HeroSection = () => {
                          preload="metadata"
                     >
                         <source
-                            src="/heroBg.m4"
+                            src="https://res.cloudinary.com/dskmoyzft/video/upload/v1631624240/DJI_0002_2__2_rou1gq.mp4"
                             type="video/webm"
                         />
-                        <source src="/heroBg.mp4"
+                        <source src="https://res.cloudinary.com/dskmoyzft/video/upload/v1631624240/DJI_0002_2__2_rou1gq.mp4"
                                 type="video/mp4"
                         />
                     </Box>
