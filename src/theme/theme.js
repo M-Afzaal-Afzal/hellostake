@@ -11,7 +11,7 @@ const fonts = {
 
 const colors = {
     'brand': {
-        400: '#141414',
+        400: '#010001',
     },
 };
 
