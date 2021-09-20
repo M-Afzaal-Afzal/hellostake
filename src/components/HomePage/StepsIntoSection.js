@@ -19,12 +19,11 @@ const StepsIntoSection = () => {
                 <Box mt={6} display={'flex'} justifyContent={'center'} alignItems={'center'}>
                     <Image
                         priority
-                        src={'https://hellostake.com/uk/_next/image?url=%2Fimages%2Fen%2Fhome-phone-city.webp&w=750&q=75'}
+                        src={'/3Phones.png'}
                         layout={'intrinsic'}
-                        width={150}
-                    >
+                        width={750}
+                    />
 
-                    </Image>
                 </Box>
 
             </Container>

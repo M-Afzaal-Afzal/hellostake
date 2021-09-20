@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Container, Heading, Text} from "@chakra-ui/react";
+import {Box, Container, Heading, Image, Text} from "@chakra-ui/react";
 import HeaderButtonFilled from "../Buttons/HeaderButtonFilled";
 import {FaGooglePlay, FaApple} from 'react-icons/fa';
 import Rate from 'rc-rate';
@@ -117,7 +117,7 @@ const HeroSection = () => {
                         display={'flex'} flexDirection={'column'} alignItems={'flex-start'}
                         gridColumn={['1/span 8', null, null, '2/span 3']}
                     >
-                        <Box display={'flex'} justifySelf={'flex-start'} alignItems={'center'} flexDirection={'column'}>
+                        <Box mx={['auto',null,null,'0 0']} display={'flex'} justifySelf={'flex-start'} alignItems={'center'} flexDirection={'column'}>
                             <HeaderButtonFilled w={'12rem'}>
                                 <FaApple/> &nbsp;   APP STORE
                             </HeaderButtonFilled>
@@ -173,7 +173,7 @@ const HeroSection = () => {
                                 <Box
                                     display={'inline-block'}
                                     maxW={'100%'}
-                                    overflow={'hidden'}
+                                    // overflow={'hidden'}
                                     pos={'relative'}
                                     margin={0}
                                     height={'100%'}
@@ -182,26 +182,35 @@ const HeroSection = () => {
 
                                     </Box>
 
-                                    <img
-                                        style={{
-                                            position: 'absolute',
-                                            top: 0,
-                                            left: 0,
-                                            bottom: 0,
-                                            right: 0,
-                                            padding: 0,
-                                            margin: 0,
-                                            width: 0,
-                                            height: 0,
-                                            maxWidth: '100%',
-                                            minWidth: '100%',
-                                            minHeight: '100%',
-                                            maxHeight: '100%',
-                                            objectFit: 'contain',
-                                        }}
-                                        src="https://hellostake.com/uk/_next/image?url=%2Fimages%2Fen%2Fhero-phone.webp&w=828&q=75"
-                                        alt="Phone"
-                                    />
+                                    <Image
+                                        priority
+                                        src={'/1Phones.png'}
+                                        layout={'intrinsic'}
+                                        width={250}
+                                    >
+
+                                    </Image>
+
+                                    {/*<img*/}
+                                    {/*    style={{*/}
+                                    {/*        position: 'absolute',*/}
+                                    {/*        top: 0,*/}
+                                    {/*        left: 0,*/}
+                                    {/*        bottom: 0,*/}
+                                    {/*        right: 0,*/}
+                                    {/*        padding: 0,*/}
+                                    {/*        margin: 0,*/}
+                                    {/*        width: 0,*/}
+                                    {/*        height: 0,*/}
+                                    {/*        maxWidth: '100%',*/}
+                                    {/*        minWidth: '100%',*/}
+                                    {/*        minHeight: '100%',*/}
+                                    {/*        maxHeight: '100%',*/}
+                                    {/*        objectFit: 'contain',*/}
+                                    {/*    }}*/}
+                                    {/*    src={"/1Phones.png"}*/}
+                                    {/*    alt="Phone"*/}
+                                    {/*/>*/}
                                 </Box>
 
                             </Box>
